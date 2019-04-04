@@ -110,9 +110,9 @@ function HDWalletProvider(
     })
   );
 
-  !shareNonce
-    ? this.engine.addProvider(new NonceSubProvider())
-    : this.engine.addProvider(singletonNonceSubProvider);
+  // !shareNonce
+  //   ? this.engine.addProvider(new NonceSubProvider())
+  //   : this.engine.addProvider(singletonNonceSubProvider);
 
   this.engine.addProvider(new FiltersSubprovider());
   if (typeof provider === "string") {
